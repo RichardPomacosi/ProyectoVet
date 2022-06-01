@@ -23,7 +23,7 @@ Content-Type: application/json
 ###perfil1
 get http://127.0.0.1:8000/api/user 
 Accept: application/json
-Authorization: Bearer 12|UOoOeFXdI3YByWshqoQTJ1kZkC4b8s4Rz4rx9W2E
+Authorization: Bearer 17|JJvrADReBLtqPmukD1FycA8zNvnGTCkVRWSVpfW5
 
 ### Perfil 
 get http://127.0.0.1:8000/api/v1/auth/perfil

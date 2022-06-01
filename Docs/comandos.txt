@@ -29,4 +29,17 @@ Generar el controlador authController
     >php artisan make:controller AuthController
 #Importar el controlllador en routes
     
-        
+//Migraciones
+crear modelo conm migraciones
+>php artisan make:persona -m migracion -c controlador
+
+crear controlador
+
+php artisan make:controller PersonaContrller --api
+extensiones code proyecto dia 3 minuto 1:38
+
+
+>php artisan  route:list
+
+
+//en el controlador importar el modelo

@@ -1,0 +1,17 @@
+### index
+get http://127.0.0.1:8000/api/persona?orderby=id
+Accept:application/json
+Authorization: Bearer 20|aiMM3wJBacHZIcQEESwZTl9hJnwBIkecVlEvMoEH
+
+### guardar
+post http://127.0.0.1:8000/api/?orderby=nombres
+Accept:application/json
+Authorization: Bearer 20|aiMM3wJBacHZIcQEESwZTl9hJnwBIkecVlEvMoEH
+Content-Type: application/json
+
+{
+    "ci":"1234523",
+    "nombres":"Osca",
+    "apellidos":"cardozo",
+    "direccion":"Av. santa fe"
+}

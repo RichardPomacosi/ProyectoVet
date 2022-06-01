@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\PersonaController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -33,5 +34,10 @@ Route::group (['prefix'=>"/v1/auth"], function(){
         Route::post("/logout",[AuthController::class,"logout"]);
     });
 });
-
-
+//Persona
+//'middleware'=>["auth:sanctum","can:ddd"]
+Route::group(['middleware'=>"auth:sanctum"],function(){
+    
+    //recursos CRUD api
+    Route::apiResource("persona",PersonaController::class);
+});
